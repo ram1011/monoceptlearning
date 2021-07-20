@@ -1,0 +1,10 @@
+Sample file 
+  
+
+
+docker-compose up -d 
+
+
+running play book with this command 
+
+$sampleplaybook.yaml
