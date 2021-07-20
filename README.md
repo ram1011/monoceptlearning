@@ -1,4 +1,4 @@
-# monoceptlearning
+# Monoceptlearning
 This is repo for things I'm learning at monocept 
 # Devops
 # Design patterns
