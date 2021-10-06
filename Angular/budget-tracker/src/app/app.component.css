@@ -1,0 +1,14 @@
+.example-form {
+  min-width: 60%;
+  max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .mat-card{
+    background: #E9FDFA;
+    color: rgba(0,0,0,.87);
+
+  }

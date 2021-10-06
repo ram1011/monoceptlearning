@@ -1,0 +1,29 @@
+<app-toolbar [title]="'Toolbar'">
+  <ul>
+    <li routerLink="/">Components</li>
+    <li>Directives</li>
+    <li>Services</li>
+    <li routerLink="pipes" routerLinkActive="active">Pipes</li>
+    <li>Other</li>
+  </ul>
+</app-toolbar>
+
+<!-- app-card -->
+<app-card [title]="'Card'" [subtitle]="'subtitle'" [iconClasses]="'fa fa-info'">
+  <p footer>Footer</p>
+  <p body>Body</p>
+</app-card>
+<app-card [title]="'Accordion'" [iconClasses]="'fa fa-info'">
+  <app-accordion  [items]="items"></app-accordion>
+</app-card>
+<app-card [title]="'progress Bar'"  [subtitle]="'subtitle'"[iconClasses]="'fa fa-info'">
+  <app-progress-bar  body [value]="100" [max]="100" ></app-progress-bar>
+ </app-card>
+ <app-card [title]="'Star ratings'"  [iconClasses]="'fa fa-info'">
+  <app-star-ratings body [rating]="4.6"></app-star-ratings>
+ </app-card>
+ <app-top-of-page body ></app-top-of-page>
+ <app-credit-card-input [creditCardNumber]="43463454746123455" [isReadonly]="true"></app-credit-card-input>
+ <app-credit-card-input [creditCardNumber]="43463454746123455" [isReadonly]="false"></app-credit-card-input>
+
+ <router-outlet></router-outlet>

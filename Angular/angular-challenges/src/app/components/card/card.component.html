@@ -1,0 +1,8 @@
+<div>
+    <h1>{{title}}</h1>
+    <h5>{{subtitle}}</h5>
+    <i *ngIf="iconclass" [ngClass]="iconclass"></i>
+    <ng-content [select]="body"></ng-content>
+    <ng-content [select]="footer"></ng-content>
+
+</div>

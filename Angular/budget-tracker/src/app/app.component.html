@@ -1,0 +1,27 @@
+<router-outlet></router-outlet>
+<mat-card>
+  <h1>
+    Budget Tracker
+  </h1> <br>
+  <form class="example-form">
+    <h3>Add Expenses</h3>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Amount</mat-label>
+      <input type="text" matInput placeholder="Ex.100">
+      <mat-error>
+        Please enter a valid amount
+      </mat-error>
+      <mat-error>
+        Amount is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Select Category</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let Category of Categories" [value]="Category.name" >
+          {{Category.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</mat-card>
